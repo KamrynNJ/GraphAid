@@ -1,0 +1,139 @@
+#logo {
+  height: 23%x;
+  width: 23%;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  animation-duration: 3s, 6s, 3s, 3s, 3s, 4s, 4s;
+  animation-name: slidein, spin, slideright, bounce, sliderup, sliderleft, bounce;
+  animation-fill-mode: forwards;
+  animation-delay: 0s, 0s, 2s, 6s, 8s, 9s, 12s;
+
+}
+
+#wordLogo{
+  height: 45%x;
+  width: 45%;
+  position: absolute;
+  bottom: 38%;
+  left: 25%;
+  opacity: 0;
+  animation-duration: 15s;
+  animation-name: fadeInLeft;
+  animation-fill-mode: forwards;
+  animation-delay: 1.6s;
+}
+
+#graphSiteLink{
+  height: 7%;
+  width: 45%;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 13%;
+  left: 25%;
+  background-color: #282f36;
+  color: white;
+  font-size: 1.5vw;
+}
+
+#tagline{
+  font-size: 3vw;
+  position: absolute;
+  top: 60.5%;
+  right: 33%;
+  font-weight: bold;
+  color: white;
+}
+
+#slogan{
+  font-size: 2.1vw;
+  position: absolute;
+  top: 68%;
+  right: 36%;
+  font-weight: bold;
+  color: white;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: -100%;
+  }
+
+  to {
+    margin-top: 18%;
+  }
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+@keyframes slideright {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: 70%;
+  }
+}
+.bounce {
+    animation-name: bounce-2;
+    animation-timing-function: ease;
+}
+@keyframes bounce {
+  from{
+    transform: scale(1,1)      translateY(0);
+  }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-100px); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-7px); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  to{
+    transform: scale(1,1)      translateY(0);
+  }
+}
+
+@keyframes sliderup {
+  from {
+    margin-top: 18%;
+  }
+
+  to {
+    margin-top: 1%;
+  }
+}
+
+@keyframes sliderleft {
+  from {
+    margin-left: 70%;
+  }
+
+  to {
+    margin-left: 35%;
+  }
+}
+
+@keyframes fadeInLeft {
+   0% {
+      opacity: 0;
+      transform: translateX(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+body{
+  position: relative;
+  overflow-y: hidden;
+  background-color: black;
+}
